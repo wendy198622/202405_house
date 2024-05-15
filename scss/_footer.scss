@@ -1,0 +1,37 @@
+footer{
+    background: #2B2927;
+    padding: 60px 0;
+    .logo{
+        width: 320px;
+        margin: 0 auto;
+    }
+    nav{
+        margin-top: 40px;
+        ul{
+            display: flex;
+            justify-content: center;
+            li{
+                display: inline-flex;
+                a{
+                    color: #B9B9BA;
+                    font-size: 20px;
+                    line-height: 1.2;
+                    font-weight: 600;
+                    letter-spacing: 2px;
+                }
+            }
+            li + li{
+                margin-left: 24px;
+            }
+        }
+    }
+    .copyright{
+        text-align: center;
+        color: #B9B9BA;
+        margin-top: 80px;
+        font-family: 'Noto Sans TC', sans-serif;
+        font-size: 12px;
+        line-height: 1.2;
+        letter-spacing: 1px;
+    }
+}

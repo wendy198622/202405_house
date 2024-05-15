@@ -1,0 +1,50 @@
+<div class="logo">
+    <a href="index.html">
+        <img class="white" src="../img/logo_white.svg" alt="">
+        <img class="black" src="../img/logo_black.svg" alt="">
+        <img class="brown" src="../img/logo_brown.svg" alt="">
+    </a>
+</div>
+
+
+<nav>
+    <div class="nav_box">
+        <ul>
+            <li>
+                <a href="promote.html">新案鑑賞</a>
+            </li>
+            <li>
+                <a href="aboutus.html">關於昊司</a>
+            </li>
+            <li>
+                <a href="classic.html">經典之作</a>
+            </li>
+            <li>
+                <a href="progress.html">精鑄實況</a>
+            </li>
+            <li>
+                <a href="contactus.html">聯絡我們</a>
+            </li>
+        </ul>
+    </div>
+
+
+    <button id="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+</nav>
+
+
+<Script>
+    $(document).ready(function () {
+
+        $("#menu-toggle").click(function () {
+            // $("ul").slideToggle();
+            $(".nav_box").animate({width:'toggle'},500);
+            $(this).toggleClass("active");
+        });
+
+    });
+</Script>

@@ -1,0 +1,147 @@
+@import '_setting';
+@import '_header';
+@import '_footer';
+
+
+.theme_contact{
+    // background-attachment: fixed;
+    .container{
+        width: 100%;
+        max-width: 1400px;
+        margin: 0 auto;
+        // overflow: hidden;
+        @media (max-width: 1400px){
+            width: 96%;
+        }
+    }
+    .topic{
+        padding: 220px 0 220px;
+        background: url(../img/aboutus_bg.jpg) center top no-repeat;
+        background-size: cover;
+        text-align: left;
+        h3{
+            font-size: 32px;
+            line-height: 1.2;
+            font-weight: 600;
+            letter-spacing: 3px;
+            color: #fff
+        }
+        h4{
+            font-family: "Playfair Display", serif;
+            text-transform: uppercase;
+            font-weight: 500;
+            font-size: 48px;
+            line-height: 1.4;
+            letter-spacing: 2px;
+            color: #fff
+        }
+    }
+    
+    .content{
+        background: url(../img/aboutus-content_bg.jpg) right top no-repeat;
+        background-size: contain;
+        padding: 100px 0;
+        overflow: hidden;
+        &.brown{
+            background: #C9A063;
+        }
+        .title{
+            h3{
+                width: 100%;
+                font-size: 32px;
+                line-height: 1.2;
+                font-weight: 600;
+                letter-spacing: 3px;
+            }
+            h4{
+                width: 100%;
+                font-size: 48px;
+                line-height: 1.4;
+                font-weight: 600;
+                letter-spacing: 8px;
+                margin-top: 20px;
+            }
+        }
+        .wording{
+            margin-top: 60px;
+            // overflow: hidden;
+            display: table;
+
+            h5{
+                width: 420px;
+                float: left;
+                font-size: 28px;
+                line-height: 1.4;
+                font-weight: 600;
+                letter-spacing: 3px;
+            }
+            p{
+                width: calc(100% - 420px);
+                float: right;
+                font-family: "Noto Sans TC", sans-serif;
+                font-size: 18px;
+                line-height: 1.6;
+                text-align: justify;
+                letter-spacing: 4px;
+                padding-left: 60px;
+                position: relative;
+                &:before{
+                    content: "";
+                    width: 1px;
+                    height: 300%;
+                    background: #231815;
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                }
+            }
+            p + p{
+                margin-top: 40px;
+            }
+            // &.w100{
+            //     width: 80%;
+            //     margin: 0 auto;
+            //     p{
+            //         width: 100%;
+            //         &:before{
+            //             display: none;
+            //         }
+            //     }
+            //     p + p{
+            //         margin-top: 60px;
+            //     }
+            // }
+        }
+    }
+    .slogan{
+        padding: 160px 0;
+        background: url(../img/aboutus-slogan_bg.jpg) center top no-repeat;
+        background-size: cover;
+        // text-align: left;
+        h3{
+            width: 500px;
+            margin: 0 auto;
+            font-size: 32px;
+            line-height: 1.6;
+            font-weight: 600;
+            letter-spacing: 8px;
+            color: #fff;
+        }
+        p{
+            width: 80%;
+            margin: 0 auto;
+            font-family: "Noto Sans TC", sans-serif;
+            font-size: 18px;
+            line-height: 1.4;
+            text-align: justify;
+            letter-spacing: 4px;
+            padding-left: 60px;
+            margin-top: 100px;
+            color: #fff;
+        }
+
+        p + p{
+            margin-top: 40px;
+        }
+    }
+}
