@@ -40,16 +40,35 @@
     .content{
         background: url(../img/aboutus-content_bg.jpg) right top no-repeat;
         background-size: contain;
-        padding: 100px 0;
+        // padding: 100px 0 0;
         overflow: hidden;
-        @media (max-width: 1080px){
-            background: url(../img/aboutus-content_bg.jpg) center top no-repeat;
-            background-size: cover;
+        @media (max-width: 1360px){
+            background: url(../img/aboutus-content_bg.jpg) center bottom no-repeat;
+            background-size: auto 50%;
         }
         &.brown{
             background: #C9A063;
         }
+        .left{
+            width: 52%;
+            float: left;
+            @media (max-width: 1360px){
+                width: 100%;
+                float: unset;
+            }
+        }
+        .right{
+            width: 48%;
+            float: right;
+            @media (max-width: 1360px){
+                width: 100%;
+                max-width: 640px;
+                float: unset;
+                margin: 0 auto;
+            }
+        }
         .title{
+            padding-top: 100px;
             h3{
                 width: 100%;
                 font-size: 32px;
@@ -70,6 +89,10 @@
             margin-top: 60px;
             // overflow: hidden;
             display: table;
+            padding-bottom: 100px;
+            @media (max-width: 1360px){
+                padding-bottom: 0;
+            }
 
             h5{
                 width: 480px;
@@ -78,6 +101,9 @@
                 line-height: 1.4;
                 font-weight: 600;
                 letter-spacing: 3px;
+                &.w100{
+                    width: 100%;
+                }
                 @media (max-width: 1080px){
                     width: 100%;
                 }
@@ -92,6 +118,10 @@
                 letter-spacing: 4px;
                 padding-left: 60px;
                 position: relative;
+                &.w100{
+                    width: 100%;
+                    margin-top: 40px;
+                }
                 @media (max-width: 1080px){
                     width: 100%;
                     margin-top: 46px;
@@ -99,15 +129,21 @@
                 &:before{
                     content: "";
                     width: 1px;
-                    height: 300%;
+                    height: 100%;
                     background: #231815;
                     position: absolute;
                     left: 0;
                     top: 0;
+                    @media (max-width: 1360px){
+                        // height: 100%;
+                    }
                 }
             }
             p + p{
                 margin-top: 40px;
+                @media (max-width: 640px){
+                    margin-bottom: 60px;
+                }
             }
             // &.w100{
             //     width: 80%;
@@ -137,6 +173,10 @@
             font-weight: 600;
             letter-spacing: 8px;
             color: #fff;
+            @media (max-width: 640px){
+                width: 100%;
+                // padding: 0 40px;
+            }
         }
         p{
             width: 80%;
@@ -153,10 +193,17 @@
                 width: 100%;
                 padding: 40px 40px 0;
             }
+            @media (max-width: 640px){
+                margin-top: 60px;
+                padding: 40px 0 0;
+            }
         }
 
         p + p{
             margin-top: 40px;
+            @media (max-width: 640px){
+                margin-top: 0;
+            }
         }
     }
 }

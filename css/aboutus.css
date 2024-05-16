@@ -529,19 +529,48 @@ footer .copyright {
 .theme_contact .content {
   background: url(../img/aboutus-content_bg.jpg) right top no-repeat;
   background-size: contain;
-  padding: 100px 0;
   overflow: hidden;
 }
 
-@media (max-width: 1080px) {
+@media (max-width: 1360px) {
   .theme_contact .content {
-    background: url(../img/aboutus-content_bg.jpg) center top no-repeat;
-    background-size: cover;
+    background: url(../img/aboutus-content_bg.jpg) center bottom no-repeat;
+    background-size: auto 50%;
   }
 }
 
 .theme_contact .content.brown {
   background: #C9A063;
+}
+
+.theme_contact .content .left {
+  width: 52%;
+  float: left;
+}
+
+@media (max-width: 1360px) {
+  .theme_contact .content .left {
+    width: 100%;
+    float: unset;
+  }
+}
+
+.theme_contact .content .right {
+  width: 48%;
+  float: right;
+}
+
+@media (max-width: 1360px) {
+  .theme_contact .content .right {
+    width: 100%;
+    max-width: 640px;
+    float: unset;
+    margin: 0 auto;
+  }
+}
+
+.theme_contact .content .title {
+  padding-top: 100px;
 }
 
 .theme_contact .content .title h3 {
@@ -564,6 +593,13 @@ footer .copyright {
 .theme_contact .content .wording {
   margin-top: 60px;
   display: table;
+  padding-bottom: 100px;
+}
+
+@media (max-width: 1360px) {
+  .theme_contact .content .wording {
+    padding-bottom: 0;
+  }
 }
 
 .theme_contact .content .wording h5 {
@@ -573,6 +609,10 @@ footer .copyright {
   line-height: 1.4;
   font-weight: 600;
   letter-spacing: 3px;
+}
+
+.theme_contact .content .wording h5.w100 {
+  width: 100%;
 }
 
 @media (max-width: 1080px) {
@@ -593,6 +633,11 @@ footer .copyright {
   position: relative;
 }
 
+.theme_contact .content .wording p.w100 {
+  width: 100%;
+  margin-top: 40px;
+}
+
 @media (max-width: 1080px) {
   .theme_contact .content .wording p {
     width: 100%;
@@ -603,7 +648,7 @@ footer .copyright {
 .theme_contact .content .wording p:before {
   content: "";
   width: 1px;
-  height: 300%;
+  height: 100%;
   background: #231815;
   position: absolute;
   left: 0;
@@ -612,6 +657,12 @@ footer .copyright {
 
 .theme_contact .content .wording p + p {
   margin-top: 40px;
+}
+
+@media (max-width: 640px) {
+  .theme_contact .content .wording p + p {
+    margin-bottom: 60px;
+  }
 }
 
 .theme_contact .slogan {
@@ -628,6 +679,12 @@ footer .copyright {
   font-weight: 600;
   letter-spacing: 8px;
   color: #fff;
+}
+
+@media (max-width: 640px) {
+  .theme_contact .slogan h3 {
+    width: 100%;
+  }
 }
 
 .theme_contact .slogan p {
@@ -650,7 +707,20 @@ footer .copyright {
   }
 }
 
+@media (max-width: 640px) {
+  .theme_contact .slogan p {
+    margin-top: 60px;
+    padding: 40px 0 0;
+  }
+}
+
 .theme_contact .slogan p + p {
   margin-top: 40px;
+}
+
+@media (max-width: 640px) {
+  .theme_contact .slogan p + p {
+    margin-top: 0;
+  }
 }
 /*# sourceMappingURL=aboutus.css.map */
