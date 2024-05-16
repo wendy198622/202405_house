@@ -57,9 +57,15 @@
             // display: table;
             &.w50{
                 width: calc((100% - 20px) / 2);
+                @media (max-width: 800px){
+                    width: 100%;
+                }
             }
             &.mr20{
                 margin-right: 20px;
+                @media (max-width: 800px){
+                    margin-right: 0;
+                }
             }
             input, select, textarea{
                 width: 100%;
@@ -117,6 +123,10 @@
             margin: 20px auto 0;
             display: block;
             font-weight: 600;
+            @media (max-width: 800px){
+                width: 100%;
+                float: left;
+            }
             &:hover{
                 cursor: pointer;
         

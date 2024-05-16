@@ -19,12 +19,12 @@
 	<link rel="stylesheet" type="text/css" href="css/animate.css" />
 	<link rel="stylesheet" type="text/css" href="css/cases.css" />
 	<!-- js -->
-    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="js/pagination.min.js"></script>
 	<!-- <script src="js/slick.js"></script> -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/js/swiper.min.js"></script>
     <script src="js/wow.min.js"></script>
-    <script src="js/pagination.min.js"></script>
 </head>
 
 <body>
@@ -166,7 +166,7 @@
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <div class="caseitem">
-                                <h5 class="wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.3s">嶺秀門</h5>
+                                <h5>嶺秀門</h5>
                                 <div class="photo">
                                     <img src="img/process_img1.jpg" alt="">
                                 </div>
@@ -175,9 +175,9 @@
                         </div>
                         <div class="swiper-slide">
                             <div class="caseitem">
-                                <h5 class="wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.3s">嶺秀門</h5>
+                                <h5>嶺秀門</h5>
                                 <div class="photo">
-                                    <img src="img/process_img1.jpg" alt="">
+                                    <img src="img/process_img2.jpg" alt="">
                                 </div>
                                 <p>嶺秀門工程進度一樓</p>
                             </div>
@@ -185,6 +185,7 @@
                     </div>
                 </div>
             </div>
+            <!-- <div class="swiper-pagination"></div> -->
             <div class="swiper-button-prev">
                 <span class="material-icons">
                     chevron_left
@@ -287,69 +288,68 @@
 
 
     //select
-    /*
-Reference: http://jsfiddle.net/BB3JK/47/
-*/
+    /* Reference: http://jsfiddle.net/BB3JK/47/*/
 
-$('select').each(function(){
-    var $this = $(this), numberOfOptions = $(this).children('option').length;
-  
-    $this.addClass('select-hidden'); 
-    $this.wrap('<div class="select"></div>');
-    $this.after('<div class="select-styled"></div>');
+    $('select').each(function(){
+        var $this = $(this), numberOfOptions = $(this).children('option').length;
+    
+        $this.addClass('select-hidden'); 
+        $this.wrap('<div class="select"></div>');
+        $this.after('<div class="select-styled"></div>');
 
-    var $styledSelect = $this.next('div.select-styled');
-    $styledSelect.text($this.children('option').eq(0).text());
-  
-    var $list = $('<ul />', {
-        'class': 'select-options'
-    }).insertAfter($styledSelect);
-  
-    for (var i = 0; i < numberOfOptions; i++) {
-        $('<li />', {
-            text: $this.children('option').eq(i).text(),
-            rel: $this.children('option').eq(i).val()
-        }).appendTo($list);
-        if ($this.children('option').eq(i).is(':selected')){
-          $('li[rel="' + $this.children('option').eq(i).val() + '"]').addClass('is-selected')
+        var $styledSelect = $this.next('div.select-styled');
+        $styledSelect.text($this.children('option').eq(0).text());
+    
+        var $list = $('<ul />', {
+            'class': 'select-options'
+        }).insertAfter($styledSelect);
+    
+        for (var i = 0; i < numberOfOptions; i++) {
+            $('<li />', {
+                text: $this.children('option').eq(i).text(),
+                rel: $this.children('option').eq(i).val()
+            }).appendTo($list);
+            if ($this.children('option').eq(i).is(':selected')){
+            $('li[rel="' + $this.children('option').eq(i).val() + '"]').addClass('is-selected')
+            }
         }
-    }
-  
-    var $listItems = $list.children('li');
-  
-    $styledSelect.click(function(e) {
-        e.stopPropagation();
-        $('div.select-styled.active').not(this).each(function(){
-            $(this).removeClass('active').next('ul.select-options').hide();
+    
+        var $listItems = $list.children('li');
+    
+        $styledSelect.click(function(e) {
+            e.stopPropagation();
+            $('div.select-styled.active').not(this).each(function(){
+                $(this).removeClass('active').next('ul.select-options').hide();
+            });
+            $(this).toggleClass('active').next('ul.select-options').toggle();
         });
-        $(this).toggleClass('active').next('ul.select-options').toggle();
-    });
-  
-    $listItems.click(function(e) {
-        e.stopPropagation();
-        $styledSelect.text($(this).text()).removeClass('active');
-        $this.val($(this).attr('rel'));
-      $list.find('li.is-selected').removeClass('is-selected');
-      $list.find('li[rel="' + $(this).attr('rel') + '"]').addClass('is-selected');
-        $list.hide();
-        //console.log($this.val());
-    });
-  
-    $(document).click(function() {
-        $styledSelect.removeClass('active');
-        $list.hide();
+    
+        $listItems.click(function(e) {
+            e.stopPropagation();
+            $styledSelect.text($(this).text()).removeClass('active');
+            $this.val($(this).attr('rel'));
+        $list.find('li.is-selected').removeClass('is-selected');
+        $list.find('li[rel="' + $(this).attr('rel') + '"]').addClass('is-selected');
+            $list.hide();
+            //console.log($this.val());
+        });
+    
+        $(document).click(function() {
+            $styledSelect.removeClass('active');
+            $list.hide();
+        });
+
     });
 
-});
-
-var mySwiper = new Swiper ('.swiper-container', {
+    var mySwiper = new Swiper ('.swiper-container', {
         // If we need pagination
         pagination: {
 			el: '.swiper-pagination',
-					clickable: true,
-				renderBullet: function (index, className) {
-				return '<span class="' + className + '">' + (menu[index]) + '</span>';
-				},
+			// type: 'bullets',
+				// 	clickable: true,
+				// renderBullet: function (index, className) {
+				// return '<span class="' + className + '">' + (menu[index]) + '</span>';
+				// },
         },
 
         // Navigation arrows

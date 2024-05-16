@@ -11,7 +11,7 @@
         margin: 0 auto;
         // overflow: hidden;
         @media (max-width: 1400px){
-            width: 96%;
+            padding: 0 40px;
         }
     }
     .topic{
@@ -42,6 +42,10 @@
         background-size: contain;
         padding: 100px 0;
         overflow: hidden;
+        @media (max-width: 1080px){
+            background: url(../img/aboutus-content_bg.jpg) center top no-repeat;
+            background-size: cover;
+        }
         &.brown{
             background: #C9A063;
         }
@@ -68,15 +72,18 @@
             display: table;
 
             h5{
-                width: 420px;
+                width: 480px;
                 float: left;
                 font-size: 28px;
                 line-height: 1.4;
                 font-weight: 600;
                 letter-spacing: 3px;
+                @media (max-width: 1080px){
+                    width: 100%;
+                }
             }
             p{
-                width: calc(100% - 420px);
+                width: calc(100% - 520px);
                 float: right;
                 font-family: "Noto Sans TC", sans-serif;
                 font-size: 18px;
@@ -85,6 +92,10 @@
                 letter-spacing: 4px;
                 padding-left: 60px;
                 position: relative;
+                @media (max-width: 1080px){
+                    width: 100%;
+                    margin-top: 46px;
+                }
                 &:before{
                     content: "";
                     width: 1px;
@@ -132,12 +143,16 @@
             margin: 0 auto;
             font-family: "Noto Sans TC", sans-serif;
             font-size: 18px;
-            line-height: 1.4;
+            line-height: 1.6;
             text-align: justify;
             letter-spacing: 4px;
             padding-left: 60px;
             margin-top: 100px;
             color: #fff;
+            @media (max-width: 1080px){
+                width: 100%;
+                padding: 40px 40px 0;
+            }
         }
 
         p + p{

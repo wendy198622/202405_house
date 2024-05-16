@@ -25,7 +25,7 @@ img{ width: 100%; display: block;}
 
 .pc{ display: block;}
 .mob{ display: none;}
-@media (max-width:960px){
+@media (max-width:1080px){
     .pc{ display: none;}
     .mob{ display: block;}
 }
@@ -64,53 +64,11 @@ input, button, select, textarea{
       margin: auto;
       font-weight: 500;
       &.popup_img{
-          width: 1200px;
-          height: 800px;
+          outline: 1px solid red;
+          width: 100%;
+          max-width: 1200px;
+          height: 760px;
           padding: 50px;
-      }
-      &.popup_mov, iframe{
-          width: 1080px;
-          height: 608px;
-          // padding: 50px;
-          outline: 10px solid #fff;
-          overflow: hidden;
-          @media (max-width:1200px){
-              width: 800px;
-              height: 450px;
-              // padding: 40px;
-          }
-          @media (max-width:1000px){
-              width: 640px;
-              height: 362px;
-              // padding: 30px;
-          }
-          @media (max-width:660px){
-              width: 400px;
-              height: 226px;
-          }
-          @media (max-width:420px){
-              width: 320px;
-              height: 180px;
-          }
-          @media (max-width:400px){
-              width: 280px;
-              height: 157px;
-          }
-          // .content{
-          //   width: auto;
-          //   height: 100%;
-          //   overflow: hidden;
-          // }
-      }
-      &.popup_code{
-          width: 500px;
-          height: 500px;
-          padding: 20px;
-          @media (max-width:600px){
-              width: 100vw;
-              height: 100vw;
-              padding: 10vw;
-          }
       }
       &.popup_message{
           width: 320px;

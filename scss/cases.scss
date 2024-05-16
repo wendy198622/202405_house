@@ -10,8 +10,9 @@
         max-width: 1400px;
         margin: 0 auto;
         // overflow: hidden;
-        @media (max-width: 1400px){
-            width: 96%;
+        @media (max-width: 1480px){
+            padding: 0 40px;
+            max-width: 100%;
         }
     }
     .topic{
@@ -89,6 +90,12 @@
                     left: 0;
                     text-align: center;
                     transition: all .3s;
+                    @media (max-width: 800px){
+                        font-size: 28px;
+                    }
+                    &.classic_title{
+                        height: 80px;
+                    }
                     span{
                         display: block;
                         font-size: 20px;
@@ -130,6 +137,10 @@
                 .item{
                     width: calc((100% - 40px) / 2);
                     &:nth-child(even){ margin-left: 40px;}
+                    @media (max-width: 960px){
+                        width: 100%;
+                        &:nth-child(even){ margin-left: 0;}
+                    }
                 }
             }
         }
@@ -144,6 +155,15 @@
                     width: calc((100% - 80px) / 3);
                     margin-left: 40px;
                     &:nth-child(3n+1){ margin-left: 0;}
+                    @media (max-width: 960px){
+                        width: calc((100% - 40px) / 2);
+                        &:nth-child(3n+1){ margin-left: 40px;}
+                        &:nth-child(odd){ margin-left: 0;}
+                    }
+                    @media (max-width: 600px){
+                        width: 100%;
+                        &:nth-child(even){ margin-left: 0;}
+                    }
                 }
             }
         }
@@ -157,6 +177,10 @@
                 .item{
                     width: calc((100% - 40px) / 2);
                     &:nth-child(even){ margin-left: 40px;}
+                    @media (max-width: 960px){
+                        width: 100%;
+                        &:nth-child(even){ margin-left: 0;}
+                    }
                 }
             }
         }
@@ -175,9 +199,20 @@
     color: #fff;
     width: 180px;
     height: 40px;
+    @media (max-width: 960px){
+        width: 156px;
+    }
+    @media (max-width: 600px){
+        width: 140px;
+        display: block;
+        margin: 0 auto;
+    }
 }
 .select + .select{
     margin-left: 20px;
+    @media (max-width: 600px){
+        margin: 20px auto 0;
+    }
 }
 .select-styled {
     position: absolute; 
@@ -299,8 +334,14 @@
         .box{
             display: flex;
             flex-direction: row;
+            @media (max-width: 960px){
+                flex-direction: column;
+            }
             .group + .group{
                 margin-left: 20px;
+                @media (max-width: 960px){
+                    margin-left: 0;
+                }
             }
         }
     }
@@ -322,6 +363,9 @@
             width: calc((100% - 40px) / 2);
             float: left;
             margin-top: 40px;
+            @media (max-width: 960px){
+                width: 100%;
+            }
             li{
                 span{
                     font-size: 18px;
@@ -337,18 +381,37 @@
 
             }
         }
-        ul + ul{ margin-left: 40px;}
+        ul + ul{ 
+            margin-left: 40px;
+            @media (max-width: 960px){
+                margin-left: 0;
+                margin-top: 0;
+                li:first-child{
+                    border-top: 2px dotted #ccc;
+                }
+            }
+        }
     }
     .case_info{
         background: #393633;
         padding: 80px 0;
         margin-top: 80px;
+        @media (max-width: 1080px){
+            padding-top: 0;
+            margin-top: 0;
+        }
         .container{
             overflow: hidden;
+            @media (max-width: 1080px){
+                padding: 0;
+            }
         }
         .map{
             width: 50%;
             float: left;
+            @media (max-width: 1080px){
+                width: 100%;
+            }
             iframe{
                 width: 100%;
                 height: 600px;
@@ -358,6 +421,10 @@
             width: calc(50% - 60px);
             float: right;
             // margin-top: 0;
+            @media (max-width: 1080px){
+                width: 100%;
+                padding: 40px 40px 0;
+            }
             .title{
                 width: 100%;
                 float: left;
@@ -431,6 +498,10 @@
                 margin: 20px auto 0;
                 display: block;
                 font-weight: 600;
+                @media (max-width: 800px){
+                    width: 100%;
+                    float: left;
+                }
                 &:hover{
                     cursor: pointer;
             
@@ -444,9 +515,16 @@
     .popup_img{
         width: auto;
         padding: 0 !important;
+        // position: relative;
         .content{
             width: 90%;
             margin: 0 auto;
+            // @media (max-width: 1200px){
+            //     width: calc(100% - 120px);
+            // }
+            // @media (max-width: 800px){
+            //     width: calc(100% - 40px);
+            // }
             h5{
                 // width: 100%;
                 color: #fff;
@@ -468,6 +546,27 @@
                 font-weight: 400;
             }
         }
+        // .swiper-pagination{
+        //     bottom: 0px;
+        //     left: 50%;
+        //     transform: translateX(-50%);
+        //     display: none;
+        //     @media (max-width:1080px){
+        //         display: block;
+        //     }
+        //     .swiper-pagination-bullet{
+        //         width: 12px;
+        //         height: 12px;
+        //         background: #615E5C;
+        //         margin: 0 4px;
+        //         opacity: 1;
+        //     }
+        //     .swiper-pagination-bullet-active{
+        //         background: #C9A063;
+        //         opacity: 1;
+        //     }
+
+        // }
         .swiper-button-prev, .swiper-button-next{
             width: 60px;
             height: 60px;
@@ -478,6 +577,9 @@
             // bottom: 0;
             background: transparent;
             text-align: center;
+            // @media (max-width: 800px){
+            //     display: none;
+            // }
             span{
                 color: #fff;
                 font-size: 36px;
