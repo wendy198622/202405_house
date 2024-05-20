@@ -27,6 +27,9 @@
             line-height: 1.2;
             font-weight: 600;
             letter-spacing: 3px;
+            @media (max-width: 640px){
+                font-size: 24px;
+            }
         }
         h4{
             font-family: "Playfair Display", serif;
@@ -35,6 +38,9 @@
             font-size: 48px;
             line-height: 1.4;
             letter-spacing: 2px;
+            @media (max-width: 640px){
+                font-size: 28px;
+            }
         }
     }
     

@@ -589,6 +589,12 @@ footer .copyright {
   letter-spacing: 3px;
 }
 
+@media (max-width: 640px) {
+  .theme .topic h3 {
+    font-size: 24px;
+  }
+}
+
 .theme .topic h4 {
   font-family: "Playfair Display", serif;
   text-transform: uppercase;
@@ -596,6 +602,12 @@ footer .copyright {
   font-size: 48px;
   line-height: 1.4;
   letter-spacing: 2px;
+}
+
+@media (max-width: 640px) {
+  .theme .topic h4 {
+    font-size: 28px;
+  }
 }
 
 .theme .filter {

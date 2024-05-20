@@ -591,6 +591,12 @@ footer .copyright {
   letter-spacing: 3px;
 }
 
+@media (max-width: 640px) {
+  .theme_contact .topic h3 {
+    font-size: 24px;
+  }
+}
+
 .theme_contact .topic h4 {
   font-family: "Playfair Display", serif;
   text-transform: uppercase;
@@ -598,6 +604,12 @@ footer .copyright {
   font-size: 48px;
   line-height: 1.4;
   letter-spacing: 2px;
+}
+
+@media (max-width: 640px) {
+  .theme_contact .topic h4 {
+    font-size: 28px;
+  }
 }
 
 .theme_contact .form {
