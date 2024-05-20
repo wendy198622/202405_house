@@ -15,7 +15,7 @@
 	<link rel="stylesheet" type="text/css" href="css/reset.css" />
 	<link rel="stylesheet" type="text/css" href="css/slick.css" />
 	<link rel="stylesheet" type="text/css" href="css/slick-theme.css" />
-	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/css/swiper.min.css" />
+	<!-- <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/css/swiper.min.css" /> -->
 	<link rel="stylesheet" type="text/css" href="css/animate.css" />
 	<link rel="stylesheet" type="text/css" href="css/cases.css" />
 	<!-- js -->
@@ -23,8 +23,12 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="js/pagination.min.js"></script>
 	<!-- <script src="js/slick.js"></script> -->
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/js/swiper.min.js"></script>
+    <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/js/swiper.min.js"></script> -->
     <script src="js/wow.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
 </head>
 
 <body>
@@ -159,11 +163,13 @@
         </div>
 	</section>
 
-	<div class="popup">
+	<div class="popup is_acted">
 		<div class="popup_content popup_img">
             <div class="content">
-                <div class="swiper-container">
+                <div class="swiper">
+                        <!-- Additional required wrapper -->
                     <div class="swiper-wrapper">
+                        <!-- Slides -->
                         <div class="swiper-slide">
                             <div class="caseitem">
                                 <h5>嶺秀門</h5>
@@ -182,20 +188,34 @@
                                 <p>嶺秀門工程進度一樓</p>
                             </div>
                         </div>
+                        <div class="swiper-slide">
+                            <div class="caseitem">
+                                <h5>嶺秀門</h5>
+                                <div class="photo">
+                                    <img src="img/process_img1.jpg" alt="">
+                                </div>
+                                <p>嶺秀門工程進度一樓</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- If we need pagination -->
+                    <!-- <div class="swiper-pagination"></div> -->
+                    
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev">
+                        <span class="material-icons">
+                            chevron_left
+                            </span>
+                    </div>
+                    <div class="swiper-button-next">
+                        <span class="material-icons">
+                            chevron_right
+                            </span>
                     </div>
                 </div>
+
             </div>
-            <!-- <div class="swiper-pagination"></div> -->
-            <div class="swiper-button-prev">
-                <span class="material-icons">
-                    chevron_left
-                    </span>
-                </div>
-            <div class="swiper-button-next">
-                <span class="material-icons">
-                    chevron_right
-                    </span>
-            </div>
+            
         </div>
         <div class="popup_close">
             <span class="material-icons">
@@ -203,6 +223,7 @@
                 </span>
         </div>
     </div>
+    
 	
 	<footer id="footer"></footer>
 
@@ -223,6 +244,47 @@
         });
 
     })
+
+    // var mySwiper = new Swiper ('.swiper-container', {
+    //     // If we need pagination
+    //     pagination: {
+    //         el: '.swiper-pagination',
+    //         type: 'bullets',
+    //             // 	clickable: true,
+    //             // renderBullet: function (index, className) {
+    //             // return '<span class="' + className + '">' + (menu[index]) + '</span>';
+    //             // },
+    //     },
+
+    //     // Navigation arrows
+    //     navigation: {
+    //         nextEl: '.swiper-button-next',
+    //         prevEl: '.swiper-button-prev',
+    //     },
+    // })
+
+    const swiper = new Swiper('.swiper', {
+        // Optional parameters
+        // direction: 'vertical',
+        loop: true,
+
+        // If we need pagination
+        pagination: {
+            el: '.swiper-pagination',
+            type: 'bullets',
+        },
+
+        // Navigation arrows
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+
+        // And if we need scrollbar
+        scrollbar: {
+            el: '.swiper-scrollbar',
+        },
+        });
 
     jQuery(document).ready(function () {
 
@@ -340,24 +402,6 @@
         });
 
     });
-
-    var mySwiper = new Swiper ('.swiper-container', {
-        // If we need pagination
-        pagination: {
-			el: '.swiper-pagination',
-			// type: 'bullets',
-				// 	clickable: true,
-				// renderBullet: function (index, className) {
-				// return '<span class="' + className + '">' + (menu[index]) + '</span>';
-				// },
-        },
-
-        // Navigation arrows
-        navigation: {
-			nextEl: '.swiper-button-next',
-			prevEl: '.swiper-button-prev',
-        },
-    })
 
 </script>
 </html>
