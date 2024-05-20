@@ -277,6 +277,7 @@ header nav {
 
 header nav .nav_box {
   display: none;
+  width: 0;
 }
 
 @media (max-width: 1080px) {
@@ -285,9 +286,9 @@ header nav .nav_box {
     height: 100%;
     position: fixed;
     top: 0;
-    right: 0;
+    right: -100%;
     background: #231815;
-    padding: 100px;
+    padding: 100px 60px;
   }
 }
 
@@ -314,6 +315,7 @@ header nav .nav_box ul li {
   header nav .nav_box ul li {
     width: 100%;
     display: block;
+    margin: 0 auto;
   }
 }
 
@@ -385,7 +387,6 @@ header nav #menu-toggle span {
 @media (max-width: 800px) {
   header nav #menu-toggle span {
     width: 30px;
-    height: 3px;
   }
 }
 
@@ -617,6 +618,12 @@ footer .copyright {
   margin-top: 60px;
   background: #E7E7E7;
   overflow: hidden;
+}
+
+@media (max-width: 800px) {
+  .theme_contact .form {
+    padding: 20px;
+  }
 }
 
 .theme_contact .form .subtitle {
