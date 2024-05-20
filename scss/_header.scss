@@ -92,9 +92,10 @@ header{
                         @media (max-width:1080px){
                             text-align: center;
                             padding: 20px 0;
-                            font-size: 32px;
+                            // font-size: 32px;
                             letter-spacing: 2px;
                         }
+                        @media (max-width:800px){}
                     }
                     &:hover{
                         &:after{
