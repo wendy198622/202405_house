@@ -277,7 +277,6 @@ header nav {
 
 header nav .nav_box {
   display: none;
-  width: 0;
 }
 
 @media (max-width: 1080px) {
@@ -697,6 +696,78 @@ footer .copyright {
   .home_kv .home_kv_logo p {
     font-size: 12px;
   }
+}
+
+.home_ideas {
+  padding: 120px 0 0;
+  background: #3E3A39;
+}
+
+.home_ideas .container {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media (max-width: 960px) {
+  .home_ideas .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.home_ideas .photo {
+  width: 52%;
+}
+
+@media (max-width: 960px) {
+  .home_ideas .photo {
+    width: calc(100% - 80px);
+    margin: 0 auto;
+  }
+}
+
+.home_ideas .content {
+  width: 42%;
+}
+
+@media (max-width: 960px) {
+  .home_ideas .content {
+    width: calc(100% - 80px);
+    margin: 0 auto;
+    margin-top: 40px;
+  }
+}
+
+.home_ideas .content h4 {
+  font-size: 28px;
+  line-height: 1.4;
+  font-weight: 600;
+  letter-spacing: 3px;
+  color: #fff;
+  margin-bottom: 40px;
+}
+
+.home_ideas .content p {
+  font-family: "Noto Sans TC", sans-serif;
+  font-size: 18px;
+  line-height: 1.6;
+  text-align: justify;
+  letter-spacing: 4px;
+  color: #fff;
+  margin-top: 20px;
 }
 
 .home_cases {

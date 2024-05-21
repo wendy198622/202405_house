@@ -110,7 +110,53 @@
         }
     }
 }
-
+.home_ideas{
+    padding: 120px 0 0;
+    background: #3E3A39;
+    .container{
+        width: 100%;
+        max-width: 1280px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        @media (max-width:960px){
+            flex-direction: column;
+        }
+    }
+    .photo{
+        width: 52%;
+        @media (max-width:960px){
+            width: calc(100% - 80px);
+            margin: 0 auto;
+        }
+    }
+    .content{
+        width: 42%;
+        @media (max-width:960px){
+            width: calc(100% - 80px);
+            margin: 0 auto;
+            margin-top: 40px;
+        }
+        h4{
+            font-size: 28px;
+            line-height: 1.4;
+            font-weight: 600;
+            letter-spacing: 3px;
+            color: #fff;
+            margin-bottom: 40px;
+        }
+        p{
+            font-family: "Noto Sans TC", sans-serif;
+            font-size: 18px;
+            line-height: 1.6;
+            text-align: justify;
+            letter-spacing: 4px;
+            color: #fff;
+            margin-top: 20px;
+        }
+    }
+}
 .home_cases{
     padding: 120px 0;
     padding-left: calc(260/1920*100%);

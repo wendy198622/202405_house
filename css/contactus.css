@@ -277,7 +277,6 @@ header nav {
 
 header nav .nav_box {
   display: none;
-  width: 0;
 }
 
 @media (max-width: 1080px) {
