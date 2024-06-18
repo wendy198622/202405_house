@@ -737,8 +737,9 @@ footer .copyright {
 }
 
 .home_kv .home_kv_logo {
-  width: 420px;
-  height: 325px;
+  width: 20%;
+  height: 0;
+  padding-bottom: 25%;
   position: absolute;
   z-index: 12;
   top: 0;
@@ -752,46 +753,17 @@ footer .copyright {
 
 @media (max-width: 1400px) {
   .home_kv .home_kv_logo {
-    width: 360px;
-    height: 370px;
+    width: 20%;
+    height: 0;
+    padding-bottom: 25%;
   }
 }
 
 @media (max-width: 600px) {
   .home_kv .home_kv_logo {
-    width: 280px;
-    height: 280px;
-    padding-bottom: 0;
-  }
-}
-
-@media (max-width: 480px) {
-  .home_kv .home_kv_logo {
-    width: 240px;
-    height: 280px;
-  }
-}
-
-.home_kv .home_kv_logo img {
-  width: 254px;
-  margin: 0 auto;
-}
-
-@media (max-width: 960px) {
-  .home_kv .home_kv_logo img {
-    width: 62%;
-  }
-}
-
-@media (max-width: 600px) {
-  .home_kv .home_kv_logo img {
-    width: 180px;
-  }
-}
-
-@media (max-width: 480px) {
-  .home_kv .home_kv_logo img {
-    width: 160px;
+    width: 15%;
+    height: 0;
+    padding-bottom: 19%;
   }
 }
 

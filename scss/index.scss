@@ -5,12 +5,9 @@
 
 .home_kv{
     width: 100%;
-    // height: 0;
-    // padding-bottom: calc(1080/1920*100%);
     position: relative;
     overflow: hidden;
     @media (max-width:1080px){
-        // padding-bottom: calc(1080/800*100%);
     }
 
     &:before{
@@ -33,8 +30,9 @@
     // }
 
     .home_kv_logo{
-        width: 420px;
-        height: 325px;
+        width: 20%;
+        height: 0;
+        padding-bottom: 25%;
         position: absolute;
         z-index: 12;
         top: 0;
@@ -43,31 +41,16 @@
         left: 0;
         margin: auto;
         animation: logo_ani 5s 1s both;
+        // outline: 10px solid red;
         @media (max-width:1400px){
-            width: 360px;
-            height: 370px;
+            width: 20%;
+            height: 0;
+            padding-bottom: 25%;
         }
         @media (max-width:600px){
-            width: 280px;
-            height: 280px;
-            padding-bottom: 0;
-        }
-        @media (max-width:480px){
-            width: 240px;
-            height: 280px;
-        }
-        img{
-            width: 254px;
-            margin: 0 auto;
-            @media (max-width:960px){
-                width: 62%;
-            }
-            @media (max-width:600px){
-                width: 180px;
-            }
-            @media (max-width:480px){
-                width: 160px;
-            }
+            width: 15%;
+            height: 0;
+            padding-bottom: 19%;
         }
         h2{
             font-size: 40px;
