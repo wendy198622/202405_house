@@ -248,11 +248,12 @@
                         overflow: hidden;
                         @media (max-width:1080px){
                             width: calc(540/800*100%);
-                            padding: 0 0 0 16px;
+                            padding-bottom: 34%;
                         }
                         @media (max-width:600px){
                             width: 100%;
-                            padding-left: 0;
+                            padding-bottom: 48%;
+                            // padding-left: 0;
                         }
                     }
                     .photo_left{
@@ -262,6 +263,7 @@
                         overflow: hidden;
                         @media (max-width:1080px){
                             width: calc(260/800*100%);
+                            padding-bottom: 20.5%;
                         }
                         @media (max-width:600px){
                             display: none;
@@ -405,6 +407,10 @@
         width: 100%;
         max-width: 1280px;
         margin: 0 auto;
+        @media (max-width:1360px){
+            width: 90%;
+
+        }
     }
     .news_topic{
         font-size: 28px;
