@@ -8,6 +8,9 @@
     background: url(../img/contactus_bg.jpg) center top no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    @media (max-width: 800px){
+        padding: 160px 0;
+    }
     .container{
         width: 100%;
         max-width: 1400px;

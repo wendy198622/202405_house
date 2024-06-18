@@ -5,6 +5,9 @@
 
 .theme{
     padding: 220px 0 120px;
+    @media (max-width: 800px){
+        padding: 160px 0;
+    }
     .container{
         width: 100%;
         max-width: 1400px;

@@ -7,7 +7,8 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    overflow: hidden;
+    // overflow: hidden;
+    overflow: auto;
     @media (max-width:1400px){
         padding: 66px 40px;
     }
@@ -75,7 +76,6 @@ header{
                         content: "";
                         width: 0%;
                         height: 3px;
-                        background: #231815;
                         border-radius: 10px;
                         position: absolute;
                         bottom: -10px;
@@ -152,7 +152,7 @@ header{
                 span{
     
                     &:nth-child(2){
-                        background-color: transparent;
+                        background: transparent !important;
                     }
     
                     &:nth-child(1){
@@ -175,7 +175,9 @@ header{
     }
     
 }
-.white{
+header.white{
+    background-image: linear-gradient(rgba(0,0,0,40%) 40%,transparent 90%);
+    
     .logo{
         a{
             img.white{ display: block;}
@@ -185,6 +187,12 @@ header{
         .nav_box{
             ul{
                 li{
+                    &:after{
+                        background: #fff;
+                        @media (max-width:1080px){
+                            display: none;
+                        }
+                    }
                     a{
                         color: #fff;
                     }
@@ -199,7 +207,8 @@ header{
         }
     }
 }
-.black{
+header.black{
+    background-image: linear-gradient(rgba(255,255,255,60%) 40%,transparent 90%);
     .logo{
         a{
             img.black{ display: block;}
@@ -209,6 +218,12 @@ header{
         .nav_box{
             ul{
                 li{
+                    &:after{
+                        background: #231815;
+                        @media (max-width:1080px){
+                            display: none;
+                        }
+                    }
                     a{
                         color: #231815;
                         @media (max-width:1080px){
@@ -225,13 +240,15 @@ header{
             }
             &.active{
                 span{
-                    background: #fff;
+                    background: #231815;
                 }
             }
         }
     }
 }
-.brown{
+header.brown{
+    background-image: linear-gradient(rgba(0,0,0,40%) 40%,transparent 90%);
+    
     .logo{
         a{
             img.brown{ display: block;}
@@ -241,6 +258,12 @@ header{
         .nav_box{
             ul{
                 li{
+                    &:after{
+                        background: #C9A063;
+                        @media (max-width:1080px){
+                            display: none;
+                        }
+                    }
                     a{
                         color: #C9A063;
                         @media (max-width:1080px){
@@ -257,7 +280,7 @@ header{
             }
             &.active{
                 span{
-                    background: #fff;
+                    background: #C9A063;
                 }
             }
         }
