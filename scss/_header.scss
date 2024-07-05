@@ -3,24 +3,21 @@ header{
     position: fixed;
     top: 0;
     z-index: 98;
-    padding: 66px 108px;
+    padding: 24px 108px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     // overflow: hidden;
     overflow: auto;
     @media (max-width:1400px){
-        padding: 66px 40px;
-    }
-    @media (max-width:1080px){
-        padding: 40px;
+        padding: 24px 40px;
     }
     @media (max-width: 800px){
         padding: 20px;
     }
 
     .logo{
-        width: 280px;
+        width: 240px;
         transition: all .3s;
         @media (max-width:640px){
             width: 200px;
@@ -176,7 +173,8 @@ header{
     
 }
 header.white{
-    background-image: linear-gradient(rgba(0,0,0,40%) 40%,transparent 90%);
+    // background-image: linear-gradient(rgba(0,0,0,40%) 40%,transparent 90%);
+    background-color: rgba(0,0,0,0.7);
     
     .logo{
         a{
@@ -208,7 +206,8 @@ header.white{
     }
 }
 header.black{
-    background-image: linear-gradient(rgba(255,255,255,60%) 40%,transparent 90%);
+    // background-image: linear-gradient(rgba(255,255,255,60%) 40%,transparent 90%);
+    background-color: rgba(255,255,255,0.9);
     .logo{
         a{
             img.black{ display: block;}
@@ -247,7 +246,8 @@ header.black{
     }
 }
 header.brown{
-    background-image: linear-gradient(rgba(0,0,0,40%) 40%,transparent 90%);
+    // background-image: linear-gradient(rgba(255,255,255,60%) 0%,transparent 90%);
+    background-color: rgba(255,255,255,0.9);
     
     .logo{
         a{

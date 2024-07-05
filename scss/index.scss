@@ -5,7 +5,7 @@
 
 .home_kv{
     width: 100%;
-    position: relative;
+    // position: relative;
     overflow: hidden;
     @media (max-width:1080px){
     }
@@ -42,54 +42,10 @@
         margin: auto;
         animation: logo_ani 5s 1s both;
         // outline: 10px solid red;
-        @media (max-width:1400px){
-            width: 20%;
+        @media (max-width:960px){
+            width: 32%;
             height: 0;
-            padding-bottom: 25%;
-        }
-        @media (max-width:600px){
-            width: 15%;
-            height: 0;
-            padding-bottom: 19%;
-            padding-top: 40px;
-        }
-        h2{
-            font-size: 40px;
-            font-weight: 600;
-            text-align:justify; 
-            text-align-last:justify;
-            white-space:nowrap;
-            margin-top: 45px;
-            @media (max-width:800px){
-                font-size: 6vw;
-            }
-            @media (max-width:600px){
-                font-size: 32px;
-            }
-            @media (max-width:480px){
-                font-size: 28px;
-            }
-
-        }
-        p{
-            font-size: 24px;
-            text-align: center;
-            text-transform: uppercase;
-            font-weight: 100;
-            margin-top: 16px;
-            letter-spacing: 2px;
-            @media (max-width:1400px){
-                font-size: 20px;
-            }
-            @media (max-width:800px){
-                font-size: 3vw;
-            }
-            @media (max-width:600px){
-                font-size: 12px;
-            }
-            @media (max-width:480px){
-                font-size: 12px;
-            }
+            padding-bottom: 40%;            
         }
     }
 }
@@ -122,19 +78,19 @@
             margin-top: 40px;
         }
         h4{
-            font-size: 28px;
-            line-height: 1.4;
-            font-weight: 600;
-            letter-spacing: 3px;
+            // font-size: 28px;
+            // line-height: 1.4;
+            // font-weight: 600;
+            // letter-spacing: 3px;
             color: #fff;
             margin-bottom: 40px;
         }
         p{
             font-family: "Noto Sans TC", sans-serif;
-            font-size: 18px;
-            line-height: 1.6;
+            // font-size: 18px;
+            // line-height: 1.6;
             text-align: justify;
-            letter-spacing: 4px;
+            // letter-spacing: 4px;
             color: #fff;
             margin-top: 20px;
         }
@@ -282,9 +238,9 @@
                         width: 100%;
                     }
                     h5 {
-                        font-size: 26px;
-                        line-height: 1.4;
-                        font-weight: 600;
+                        font-size: 24px;
+                        // line-height: 1.4;
+                        // font-weight: 600;
                         letter-spacing: 2px;
                         overflow: hidden;
                         text-overflow: ellipsis;
@@ -298,11 +254,11 @@
                     }
                     
                     p{
-                        font-size: 18px;                        
-                        line-height: 1.4;
-                        font-weight: 400;
+                        // font-size: 18px;                        
+                        // line-height: 1.4;
+                        // font-weight: 400;
                         margin-top: 12px;
-                        letter-spacing: 2px;
+                        // letter-spacing: 2px;
                         font-family: "Noto Sans TC", sans-serif;
                         overflow: hidden;
                         text-overflow: ellipsis;
@@ -429,15 +385,15 @@
         .info{
             h4{
                 font-size: 16px;
-                font-weight: 600;
-                line-height: 1.2;
+                // font-weight: 600;
+                // line-height: 1.2;
                 margin-top: 20px;
             }
             h3{
-                font-size: 20px;
-                font-weight: 600;
-                line-height: 1.4;
-                letter-spacing: 2px;
+                font-size: 24px;
+                // font-weight: 600;
+                // line-height: 1.4;
+                // letter-spacing: 2px;
                 margin-top: 10px;
                 overflow: hidden;
                 text-overflow: ellipsis;
@@ -447,10 +403,10 @@
                 box-sizing:border-box;
             }
             p{
-                font-size: 16px;
-                line-height: 1.4;
+                // font-size: 16px;
+                // line-height: 1.4;
                 font-family: "Noto Sans TC", sans-serif;
-                letter-spacing: 2px;
+                // letter-spacing: 2px;
                 margin-top: 20px;
                 overflow: hidden;
                 text-overflow: ellipsis;

@@ -25,6 +25,9 @@
     <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/js/swiper.min.js"></script> -->
     <script src="js/wow.min.js"></script>
     <script src="js/pagination.min.js"></script>
+
+	<!-- 0617新增 -->
+    <script src="js/imgLiquid-min.js"></script>
 </head>
 
 <body>
@@ -68,8 +71,9 @@
                             <div class="title classic_title">
                                 <span>20xx</span>
                                 昊司庭苑</div>
-                            <div class="photo">
-                                <img src="img/classic_img1.jpg" alt="">
+                                <!-- 0617修改 -->
+                            <div class="photo imgLiquidFill imgLiquid full">
+                                <img src="https://haosi.com.tw/files/project/cc057610-99ab-4d01-8cd0-e960ed9147cc.jpg" alt="">
                             </div>
                         </a>
                     </div>
@@ -78,8 +82,9 @@
                             <div class="title classic_title">
                                 <span>20xx</span>
                                 昊司庭苑二期</div>
-                            <div class="photo">
-                                <img src="img/classic_img2.jpg" alt="">
+                                <!-- 0617修改 -->
+                            <div class="photo imgLiquidFill imgLiquid full">
+                                <img src="https://haosi.com.tw/files/project/5ae2572c-40da-4b89-bf4a-6a9c876ed10d.jpg" alt="">
                             </div>
                         </a>
                     </div>
@@ -88,8 +93,9 @@
                             <div class="title classic_title">
                                 <span>20xx</span>
                                 聖德段</div>
-                            <div class="photo">
-                                <img src="img/classic_img3.jpg" alt="">
+                                <!-- 0617修改 -->
+                            <div class="photo imgLiquidFill imgLiquid full">
+                                <img src="https://haosi.com.tw/files/project/3aa00165-cc57-4273-a4ce-8f4541d9177b.jpg" alt="">
                             </div>
                         </a>
                     </div>
@@ -98,7 +104,8 @@
                             <div class="title classic_title">
                                 <span>20xx</span>
                                 昊司庭苑</div>
-                            <div class="photo">
+                                <!-- 0617修改 -->
+                            <div class="photo imgLiquidFill imgLiquid full">
                                 <img src="img/classic_img1.jpg" alt="">
                             </div>
                         </a>
@@ -108,7 +115,8 @@
                             <div class="title classic_title">
                                 <span>20xx</span>
                                 昊司庭苑二期</div>
-                            <div class="photo">
+                                <!-- 0617修改 -->
+                            <div class="photo imgLiquidFill imgLiquid full">
                                 <img src="img/classic_img2.jpg" alt="">
                             </div>
                         </a>
@@ -118,7 +126,8 @@
                             <div class="title classic_title">
                                 <span>20xx</span>
                                 聖德段</div>
-                            <div class="photo">
+                                <!-- 0617修改 -->
+                            <div class="photo imgLiquidFill imgLiquid full">
                                 <img src="img/classic_img3.jpg" alt="">
                             </div>
                         </a>
@@ -128,7 +137,8 @@
                             <div class="title classic_title">
                                 <span>20xx</span>
                                 昊司庭苑</div>
-                            <div class="photo">
+                                <!-- 0617修改 -->
+                            <div class="photo imgLiquidFill imgLiquid full">
                                 <img src="img/classic_img1.jpg" alt="">
                             </div>
                         </a>
@@ -138,7 +148,8 @@
                             <div class="title classic_title">
                                 <span>20xx</span>
                                 昊司庭苑二期</div>
-                            <div class="photo">
+                                <!-- 0617修改 -->
+                            <div class="photo imgLiquidFill imgLiquid full">
                                 <img src="img/classic_img2.jpg" alt="">
                             </div>
                         </a>
@@ -148,7 +159,8 @@
                             <div class="title classic_title">
                                 <span>20xx</span>
                                 聖德段</div>
-                            <div class="photo">
+                                <!-- 0617修改 -->
+                            <div class="photo imgLiquidFill imgLiquid full">
                                 <img src="img/classic_img3.jpg" alt="">
                             </div>
                         </a>
@@ -158,7 +170,8 @@
                             <div class="title classic_title">
                                 <span>20xx</span>
                                 昊司庭苑</div>
-                            <div class="photo">
+                                <!-- 0617修改 -->
+                            <div class="photo imgLiquidFill imgLiquid full">
                                 <img src="img/classic_img1.jpg" alt="">
                             </div>
                         </a>
@@ -180,6 +193,9 @@
 <script>
 	$(document).ready(function () {
 		new WOW().init();
+
+        // 0617新增
+        $(".imgLiquidFill").imgLiquid({fill:true});
 
 		$('#header').load('page/header.html');
 		$('#footer').load('page/footer.html');

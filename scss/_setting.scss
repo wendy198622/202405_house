@@ -68,13 +68,12 @@ input, button, select, textarea{
         height: 760px;
         padding: 50px;
         @media (max-width: 1280px){
-            width: calc(100% - 80px);
-            height: auto;
-            max-height: 50vh;
-            margin: auto;
+            width: 720px;
+            height: 560px;
         }
         @media (max-width: 800px){
             width: calc(100% - 40px);
+            height: 50vh;
         }
       }
       &.popup_message{
@@ -159,4 +158,57 @@ span.animate_e{
             }
         }
     }
+}
+
+
+h2{
+    font-size: 32px;
+    line-height: 160%;
+    font-weight: 600;
+    letter-spacing: 4px;
+    @media (max-width: 600px){
+        font-size: 28px;
+    }
+}
+h3{
+    font-size: 28px;
+    line-height: 160%;
+    font-weight: 600;
+    letter-spacing: 4px;
+    @media (max-width: 600px){
+        font-size: 24px;
+    }
+}
+h4{
+    font-size: 24px;
+    line-height: 160%;
+    font-weight: 600;
+    letter-spacing: 4px;
+    @media (max-width: 600px){
+        font-size: 20px;
+    }
+}
+h5{
+    font-size: 20px;
+    line-height: 160%;
+    font-weight: 600;
+    letter-spacing: 4px;
+    @media (max-width: 600px){
+        font-size: 18px;
+    }
+}
+h6{
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.2;
+    margin-top: 20px;
+    letter-spacing: 2px;
+}
+p{
+    font-size: 18px;
+    line-height: 160%;
+    font-weight: 300;
+    letter-spacing: 2px;
+    text-align: justify;
+    margin-top: 20px;
 }
