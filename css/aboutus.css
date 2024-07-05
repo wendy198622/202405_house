@@ -1158,6 +1158,81 @@ footer .copyright {
   }
 }
 
+.theme_aboutus .partners {
+  background: url(../img/aboutus-partners_bg.jpg) center top no-repeat;
+  background-size: cover;
+}
+
+.theme_aboutus .partners .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+@media (max-width: 1080px) {
+  .theme_aboutus .partners .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.theme_aboutus .partners .container .content {
+  width: 65%;
+  padding: 80px 0;
+  background: none;
+}
+
+@media (max-width: 1400px) {
+  .theme_aboutus .partners .container .content {
+    width: 60%;
+  }
+}
+
+@media (max-width: 1080px) {
+  .theme_aboutus .partners .container .content {
+    width: 100%;
+  }
+}
+
+.theme_aboutus .partners .container .content h5 {
+  margin-top: 32px;
+}
+
+.theme_aboutus .partners .container .content p {
+  font-family: "Noto Sans TC", sans-serif;
+}
+
+.theme_aboutus .partners .container .photo {
+  width: 35%;
+}
+
+@media (max-width: 1400px) {
+  .theme_aboutus .partners .container .photo {
+    width: 40%;
+  }
+}
+
+@media (max-width: 1080px) {
+  .theme_aboutus .partners .container .photo {
+    width: 80%;
+  }
+}
+
 .theme_aboutus .news {
   padding: 60px 0;
 }
