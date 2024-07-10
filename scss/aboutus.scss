@@ -285,7 +285,7 @@
         background: url(../img/aboutus-partners_bg.jpg) center top no-repeat;
         background-size: cover;
         @media (max-width: 1080px){
-            background-size: auto 15%;
+            background-size: contain;
             background-repeat: repeat-y;
         }
         .container{
@@ -301,6 +301,7 @@
                 width: 65%;
                 padding: 80px 0;
                 background: none;
+                position: relative;
                 @media (max-width: 1400px){
                     width: 60%;
                 }
@@ -315,6 +316,29 @@
                 }
                 p{
                     font-family: "Noto Sans TC", sans-serif;
+                }
+                .expr{
+                    position: absolute;
+                    right: 0%;
+                    top: 15%;
+                    font-size: 18px;
+                    line-height: 160%;
+                    background: #C9A063;
+                    padding: 10px 20px;
+                    border-radius: 10px;
+                    @media (max-width: 1400px){
+                        top: 14%;
+                    }
+                    @media (max-width: 1080px){
+                        position: static;
+                        top: auto;
+                        right: auto;
+                        background: transparent;
+                        padding: 10px 0;
+                    }
+                    h5{
+                        margin-top: 0;
+                    }
                 }
             }
             .photo{ 
