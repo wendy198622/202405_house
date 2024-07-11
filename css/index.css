@@ -446,7 +446,7 @@ header nav #menu-toggle span {
 
 @media (max-width: 640px) {
   header nav #menu-toggle span {
-    width: 26px;
+    width: 24px;
     height: 3px;
     margin: 5px 0;
   }
