@@ -12,12 +12,15 @@ header{
     @media (max-width: 800px){
         padding: 20px;
     }
+    @media (max-width: 640px){
+        padding: 12px;
+    }
 
     .logo{
         width: 240px;
         transition: all .3s;
         @media (max-width:640px){
-            width: 200px;
+            width: 160px;
         }
         a{
             font-size: 30px;
@@ -130,10 +133,10 @@ header{
                 margin: 6px 0;
                 position: relative;
                 transition: all .3s;
-                @media (max-width: 800px){
-                    // width: 30px;
-                    // height: 3px;
-                    // margin: 6px 0;
+                @media (max-width:640px){
+                    width: 26px;
+                    height: 3px;
+                    margin: 5px 0;
                 }
             }
     

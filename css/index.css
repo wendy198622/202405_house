@@ -294,6 +294,12 @@ header {
   }
 }
 
+@media (max-width: 640px) {
+  header {
+    padding: 12px;
+  }
+}
+
 header .logo {
   width: 240px;
   -webkit-transition: all .3s;
@@ -302,7 +308,7 @@ header .logo {
 
 @media (max-width: 640px) {
   header .logo {
-    width: 200px;
+    width: 160px;
   }
 }
 
@@ -436,6 +442,14 @@ header nav #menu-toggle span {
   position: relative;
   -webkit-transition: all .3s;
   transition: all .3s;
+}
+
+@media (max-width: 640px) {
+  header nav #menu-toggle span {
+    width: 26px;
+    height: 3px;
+    margin: 5px 0;
+  }
 }
 
 header nav #menu-toggle:hover {
