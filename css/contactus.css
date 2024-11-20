@@ -472,6 +472,12 @@ header nav #menu-toggle.active span:nth-child(3) {
   margin-top: -20px;
 }
 
+@media (max-width: 640px) {
+  header nav #menu-toggle.active span:nth-child(3) {
+    margin-top: -16px;
+  }
+}
+
 header nav #menu-toggle.active h6 {
   opacity: 0;
   visibility: hidden;

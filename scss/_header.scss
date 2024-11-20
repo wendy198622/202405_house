@@ -160,6 +160,9 @@ header{
                     &:nth-child(3){
                         transform: rotate(220deg);
                         margin-top: -20px;
+                        @media (max-width:640px){
+                            margin-top: -16px;
+                        }
                     }
                 }
     
